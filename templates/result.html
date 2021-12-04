@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CowntIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body class="d-flex flex-column">
+
+<div class="p-3 d-flex bg-white flex-row container-fluid">
+    <div class="d-inline-flex align-items-center">
+        <a class="btn btn-primary" href="/">Back</a>
+        <h1 class="ml-4">Resultados:</h1>
+        <h1 class="ml-4">{{mass}} kg</h1>
+    </div>
+</div>
+
+<div class="content d-flex flex-column flex-fill justify-content-center align-items-center container-images">
+    <div class="container-fluid d-flex flex-column flex-fill justify-content-center align-items-center">
+        <div class="row d-flex mb-2 justify-content-around container-fluid">
+            <div class="col-sm im-show" >
+                <h4>Imagen Frontal</h4>
+                <img id="im_input" src="{{ im_input }}" alt="">
+            </div>
+            <div class="col-sm im-show">
+                <h4>Imagen Lateral</h4>
+                <img id="im_output" src="{{ im_output }}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
